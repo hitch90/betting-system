@@ -1,0 +1,54 @@
+.teams {
+  margin: 50px auto;
+  max-width: 1350px;
+  background: $teams-bg;
+  padding: 30px;
+  &__field {
+    margin: 0 0 20px;
+    @include tablet {
+      margin: 0 20px 0 0;
+      min-width: 20%;
+    }
+  }
+  &__form {
+    margin: 0 0 30px;
+    @include tablet {
+      display: flex;
+      align-items: flex-end;
+    }
+    label {
+      display: block;
+      margin: 0 15px 5px 0;
+      font: normal 12px/16px $font-primary;
+      color: $account-register-color;
+    }
+    input {
+      border: 0;
+      display: block;
+      border-bottom: 1px solid $account-register-border;
+      width: 100%;
+      font: normal 15px/35px $font-primary;
+      padding: 0 10px;
+      border-radius: 3px;
+      color: #000;
+    }
+    button {
+      border: 0;
+      margin: 0;
+    }
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      color: $color;
+      font: normal 14px/16px $font-primary;
+      border-bottom: 1px solid $account-bet-border;
+      padding: 15px 0;
+      span {
+        float: right;
+      }
+    }
+  }
+}

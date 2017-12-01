@@ -1,0 +1,46 @@
+.homepage	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^.homepage {$/;"	function	line:1
+&__filters	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__filters {$/;"	function	line:2
+&__registerBox	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__registerBox {$/;"	function	line:8
+p	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^    p {$/;"	function	line:16
+a	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^    a {$/;"	function	line:21
+i	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^      i {$/;"	function	line:28
+&__filtersWrapper	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__filtersWrapper {$/;"	function	line:36
+&__filtersGame	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__filtersGame {$/;"	function	line:43
+a	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^    a {$/;"	function	line:46
+&:hover	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^      &:hover {$/;"	function	line:54
+&.active	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^      &.active {$/;"	function	line:57
+&__filtersStatus	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__filtersStatus {$/;"	function	line:63
+li	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^    li {$/;"	function	line:68
+a	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^      a {$/;"	function	line:73
+&:hover	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^        &:hover {$/;"	function	line:77
+&.active	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^      &.active {$/;"	function	line:81
+a	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^        a {$/;"	function	line:83
+&__container	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__container {$/;"	function	line:89
+&__matchList	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__matchList {$/;"	function	line:97
+&__sidebar	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__sidebar {$/;"	function	line:101
+&__matchList	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__matchList {$/;"	function	line:105
+&__matchItem	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__matchItem {$/;"	function	line:107
+&:hover	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^    &:hover {$/;"	function	line:115
+.homepage	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^      .homepage {$/;"	function	line:118
+&__matchPool	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^        &__matchPool,$/;"	function	line:119
+&__matchEvent a	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^        &__matchEvent a,$/;"	function	line:120
+&__matchLink	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^        &__matchLink {$/;"	function	line:121
+&__matchDate	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^        &__matchDate,$/;"	function	line:124
+&__matchWinner	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^        &__matchWinner {$/;"	function	line:125
+img	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^    img {$/;"	function	line:131
+&__matchDate	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__matchDate,$/;"	function	line:136
+&__matchWinner	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__matchWinner {$/;"	function	line:137
+&__matchFirstTeam	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__matchFirstTeam,$/;"	function	line:145
+&__matchSecondTeam	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__matchSecondTeam {$/;"	function	line:146
+&__matchFirstTeam	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__matchFirstTeam {$/;"	function	line:150
+&__matchSecondTeam	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__matchSecondTeam {$/;"	function	line:153
+&__matchPool	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__matchPool {$/;"	function	line:156
+&__matchDetails	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__matchDetails {$/;"	function	line:164
+&__matchLink	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__matchLink {$/;"	function	line:168
+&:hover	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^    &:hover {$/;"	function	line:173
+img	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^    img {$/;"	function	line:176
+span	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^    span {$/;"	function	line:179
+&__matchGame	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__matchGame {$/;"	function	line:184
+&__matchEvent	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__matchEvent {$/;"	function	line:193
+a	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^    a {$/;"	function	line:197
+&__todayList	/Users/tpiatek/workspace/node/simple-todos/client/components/_homepage.scss	/^  &__todayList {$/;"	function	line:202

@@ -1,0 +1,7 @@
+.alert {
+  border-radius: 3px;
+  &--static {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+}

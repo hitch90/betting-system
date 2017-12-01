@@ -1,0 +1,83 @@
+.matches {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 10px;
+  @include media(1220px) {
+    padding: 0;
+  }
+  &__matchList {
+    grid-area: matches;
+    background: $homepage-blocks-bg;
+  }
+  &__field {
+    margin: 0 0 15px;
+    @include tablet {
+      margin: 0 20px 0 0;
+    }
+    &--calendar {
+      min-width: 150px;
+    }
+  }
+  &__form {
+    margin: 15px;
+    @include tablet {
+      margin: 0 0 30px;
+      display: grid;
+      grid-template-columns:
+        calc(90% / 5) calc(90% / 5) calc(90% / 5) calc(90% / 5)
+        calc(90% / 5) 10%;
+      align-items: end;
+    }
+    input {
+      border: 0;
+      display: block;
+      width: 100%;
+      font: normal 15px/35px $font-primary;
+      padding: 0 10px;
+      border-radius: 3px;
+      color: #000;
+    }
+    button {
+      border: 0;
+      margin: 0;
+    }
+  }
+  &__filters {
+    margin: 15px;
+    align-items: center;
+    padding: 30px 0;
+    @include tablet {
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+    }
+  }
+  &__filter {
+    margin: 0 0 15px;
+    @include tablet {
+      margin: 0;
+    }
+  }
+  .react-tabs__tab {
+    padding: 0 20px;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    &-list {
+      border-bottom: 0;
+      margin-bottom: 30px;
+    }
+    &--selected {
+      background: transparent;
+      border-bottom: 2px solid $account-register-border;
+      .typo {
+        color: $primary;
+      }
+    }
+  }
+  &--add {
+    max-width: 1100px;
+    margin: 50px auto;
+  }
+}

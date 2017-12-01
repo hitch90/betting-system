@@ -1,0 +1,25 @@
+$tablet-width: 768px;
+$tablet-big: 1024px;
+$phone-big: 640px;
+
+@mixin phone-big {
+  @media (min-width: #{$phone-big}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin tablet-big {
+  @media (min-width: #{$tablet-big}) {
+    @content;
+  }
+}
+@mixin media($width) {
+  @media only screen and (min-width: #{$width}) {
+    @content;
+  }
+}

@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "PremierSans-Light";
+  src: url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Light.eot?&0b81a9b8576a#iefix");
+  src: url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Light.eot?&0b81a9b8576a#iefix")
+      format("eot"),
+    url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Light.woff2?0b81a9b8576a")
+      format("woff2"),
+    url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Light.woff?0b81a9b8576a")
+      format("woff"),
+    url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Light.ttf?0b81a9b8576a")
+      format("truetype"),
+    url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Light.svg?0b81a9b8576a#51b3f097-4f77-44d6-84fa-d4ccabf83ea2")
+      format("svg");
+}
+@font-face {
+  font-family: "PremierSans-Regular";
+  src: url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Regular.eot?&0b81a9b8576a#iefix");
+  src: url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Regular.eot?&0b81a9b8576a#iefix")
+      format("eot"),
+    url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Regular.woff2?0b81a9b8576a")
+      format("woff2"),
+    url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Regular.woff?0b81a9b8576a")
+      format("woff"),
+    url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Regular.ttf?0b81a9b8576a")
+      format("truetype"),
+    url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Regular.svg?0b81a9b8576a#7750d31b-4f46-466c-a7f2-d0071c638678")
+      format("svg");
+}
+@font-face {
+  font-family: "PremierSans-Bold";
+  src: url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.eot?&0b81a9b8576a#iefix");
+  src: url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.eot?&0b81a9b8576a#iefix")
+      format("eot"),
+    url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.woff2?0b81a9b8576a")
+      format("woff2"),
+    url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.woff?0b81a9b8576a")
+      format("woff"),
+    url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.ttf?0b81a9b8576a")
+      format("truetype"),
+    url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-Bold.svg?0b81a9b8576a#6fd2576b-b17d-42bb-8069-d902dd3f6a6e")
+      format("svg");
+}
+@font-face {
+  font-family: "PremierSans-Light-Italic";
+  src: url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-LightIt.eot?&0b81a9b8576a#iefix");
+  src: url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-LightIt.eot?&0b81a9b8576a#iefix")
+      format("eot"),
+    url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-LightIt.woff2?0b81a9b8576a")
+      format("woff2"),
+    url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-LightIt.woff?0b81a9b8576a")
+      format("woff"),
+    url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-LightIt.ttf?0b81a9b8576a")
+      format("truetype"),
+    url("https://ismdj.scdn5.secure.raxcdn.com/static/libsass/plfpl/dist/fonts/PremierLeagueW01-LightIt.svg?0b81a9b8576a#6fd2576b-b17d-42bb-8069-d902dd3f6a6e")
+      format("svg");
+}
+
+$font-primary: "PremierSans-Regular", sans-serif;
+$font-bold: "PremierSans-Bold", sans-serif;
+$font-light: "PremierSans-Light", sans-serif;
+$font-headline: "Lato", sans-serif;
+
+.typo {
+  &__h1 {
+    font: normal 26px/36px "PremierSans-Bold";
+    &--username {
+      color: $secondary;
+    }
+  }
+  &__h2 {
+    font: normal 18px/24px "PremierSans-Bold";
+    margin-bottom: 15px;
+    color: #74fa93;
+    &--matchday {
+      font-size: 16px;
+      margin: 0 0 20px;
+    }
+    &--match {
+      font: normal 24px/30px $font-bold;
+      margin: 80px 0 50px;
+      text-align: center;
+    }
+  }
+}

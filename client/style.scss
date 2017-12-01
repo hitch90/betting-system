@@ -1,0 +1,33 @@
+@import "libs/reset.scss";
+@import "libs/shards.min.scss";
+@import "libs/shards-extras.min.scss";
+
+@import "common/_colors";
+@import "common/_mixins";
+@import "common/_typo";
+
+html,
+body {
+  background: $bg;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@import "components/_matchList";
+@import "components/_nav";
+@import "components/_btn";
+
+@import "components/_homepage";
+@import "components/_account";
+@import "components/_teams";
+@import "components/_games";
+@import "components/_match";
+@import "components/alert";
+@import "components/_stats";
+@import "components/_hamburger";
+@import "components/_matches";
+
+.react-datepicker__time-list {
+  padding: 0 !important;
+}

@@ -1,0 +1,72 @@
+.btn {
+  display: inline-block;
+  &--primary {
+    background: $btn-primary;
+    color: $btn-primary-color;
+    padding: 10px 27px;
+    border-radius: 2px;
+    font: $btn-font;
+    transition: background 0.3s;
+    box-shadow: 1px 1px 10px rgba(5, 242, 108, 0.6);
+    &:hover {
+      background: $btn-primary-hover;
+      text-decoration: none;
+      color: $btn-primary-hover-color;
+    }
+  }
+  &--outline {
+    background: transparent;
+    color: $btn-primary;
+    border: 1px solid $btn-primary;
+    border-radius: 2px;
+    padding: 10px 27px;
+    font: $btn-font;
+    transition: box-shadow 0.3s;
+    box-shadow: 1px 1px 10px rgba(5, 242, 108, 0.6);
+
+    &:hover {
+      color: $btn-primary-hover;
+      text-decoration: none;
+      box-shadow: 0 0 0 1px $btn-primary;
+    }
+  }
+  &--secondary {
+    background: $btn-secondary;
+    color: $btn-secondary-color;
+    padding: 10px 27px;
+    border-radius: 2px;
+    font: $btn-font-normal;
+    transition: background 0.3s;
+    &:hover {
+      background: $btn-secondary-hover;
+      text-decoration: none;
+      color: $btn-secondary-hover-color;
+    }
+  }
+  &--join {
+    margin: 15px 0;
+    display: block;
+    width: 100px;
+    text-align: center;
+  }
+  &--filtersMobile {
+    margin: 15px auto;
+    @include tablet {
+      display: none;
+    }
+  }
+  &--filtersSubmit {
+    @include tablet {
+      display: none;
+    }
+  }
+  &--addMatch {
+    display: block;
+    margin: 0 15px 15px;
+    text-align: center;
+    @include tablet {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+}
