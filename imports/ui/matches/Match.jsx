@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 import { Meteor } from "meteor/meteor";
+import NotificationSystem from "react-notification-system";
 
 import { createContainer } from "meteor/react-meteor-data";
 
@@ -15,13 +16,37 @@ class MatchComponent extends Component {
     stake: null,
     choice: null
   };
+  _notificationSystem: null;
+  componentDidMount() {
+    this._notificationSystem = this.refs.notificationSystem;
+  }
   handleSubmit(id, choice) {
     if (this.state.stake > this.props.currentUser.profile.tokens) {
-      alert("you dont have enougth tokens");
+      this._notificationSystem.addNotification({
+        message: "You don't have enougth tokens!",
+        level: "error",
+        position: "tc"
+      });
+      return false;
+    }
+    if (!this.state.stake || this.state.stake < 5) {
+      this._notificationSystem.addNotification({
+        message: "Minimal stake is 5 tokens.",
+        level: "error",
+        position: "tc"
+      });
       return false;
     }
     Meteor.call("bets.insert", Meteor.userId(), choice, this.state.stake, id);
     this.updateTokens();
+    this.setState({
+      stake: null
+    });
+    this._notificationSystem.addNotification({
+      message: "Your bet added.",
+      level: "success",
+      position: "tc"
+    });
   }
   updateTokens() {
     const newTokens =
@@ -57,6 +82,8 @@ class MatchComponent extends Component {
   render() {
     return (
       <div className="match">
+        <NotificationSystem ref="notificationSystem" />
+
         {this.props.matchWrapper.map(match => (
           <div key={match._id}>
             <header className="match__header">

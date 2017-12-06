@@ -40,6 +40,7 @@ class TeamsComponent extends Component {
           onClick={() => {
             this.delete(team._id);
           }}
+          className="delete"
         >
           delete
         </span>
@@ -51,7 +52,14 @@ class TeamsComponent extends Component {
           edit&nbsp;
         </span>
         {this.state.editMode == team._id && (
-          <Update id={team._id} name={team.name} logo={team.logo} />
+          <Update
+            id={team._id}
+            name={team.name}
+            logo={team.logo}
+            onClose={() => {
+              this.setState({ editMode: null });
+            }}
+          />
         )}
       </li>
     ));

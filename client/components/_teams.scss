@@ -48,6 +48,18 @@
       padding: 15px 0;
       span {
         float: right;
+        cursor: pointer;
+        background: $btn-primary;
+        color: $btn-primary-color;
+        margin: 0 10px;
+        display: inline-block;
+        padding: 3px 7px;
+        border-radius: 2px;
+        font-size: 11px;
+        &.delete {
+          background: $alert-error;
+          color: #fff;
+        }
       }
     }
   }

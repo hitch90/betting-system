@@ -23,10 +23,10 @@
     @include tablet {
       margin: 0 0 30px;
       display: grid;
-      grid-template-columns:
-        calc(90% / 5) calc(90% / 5) calc(90% / 5) calc(90% / 5)
-        calc(90% / 5) 10%;
+      grid-template-columns: 1fr 1fr 1fr;
       align-items: end;
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
     }
     input {
       border: 0;

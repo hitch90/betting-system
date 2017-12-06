@@ -8,6 +8,7 @@ import DatePicker from "react-datepicker";
 import moment from "moment";
 import "react-datepicker/dist/react-datepicker.css";
 import "react-select/dist/react-select.css";
+import NotificationSystem from "react-notification-system";
 
 import { Matches } from "../../api/matches.js";
 import { Teams } from "../../api/teams.js";
@@ -21,19 +22,45 @@ class AddMatch extends Component {
     game: null,
     event: null,
     startAt: null,
-    startDate: moment(),
-    isSet: false
+    startDate: moment()
   };
+  _notificationSystem: null;
   handleSubmit(event) {
     event.preventDefault();
-    Meteor.call(
-      "matches.insert",
-      this.state.firstOpponent,
-      this.state.secondOpponent,
-      this.state.game,
-      this.state.event,
+    if (
+      this.state.firstOpponent &&
+      this.state.secondOpponent &&
+      this.state.game &&
       this.state.startAt
-    );
+    ) {
+      Meteor.call(
+        "matches.insert",
+        this.state.firstOpponent,
+        this.state.secondOpponent,
+        this.state.game,
+        this.state.event,
+        this.state.startAt
+      );
+      this._notificationSystem.addNotification({
+        message: "Match added.",
+        level: "success",
+        position: "tc"
+      });
+      this.setState({
+        firstOpponent: null,
+        secondOpponent: null,
+        game: null,
+        event: null,
+        startAt: null,
+        startDate: moment()
+      });
+    } else {
+      this._notificationSystem.addNotification({
+        message: "Please fill require fields!",
+        level: "error",
+        position: "tc"
+      });
+    }
   }
   handleChange(date) {
     this.setState({
@@ -61,9 +88,13 @@ class AddMatch extends Component {
       event: val
     });
   }
+  componentDidMount() {
+    this._notificationSystem = this.refs.notificationSystem;
+  }
   render() {
     return (
       <div className="matches matches--add">
+        <NotificationSystem ref="notificationSystem" />
         <h2 className="typo typo__h2">Add new match</h2>
         <form
           className="matches__form"
