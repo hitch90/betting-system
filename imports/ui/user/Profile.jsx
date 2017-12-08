@@ -8,7 +8,7 @@ import { createContainer } from "meteor/react-meteor-data";
 import { Bets } from "../../api/bets.js";
 
 import BetsView from "./Bets.jsx";
-
+import Rank from "./Rank.jsx";
 class ProfileComponent extends Component {
   state = {
     editMode: false,
@@ -51,7 +51,11 @@ class ProfileComponent extends Component {
   }
   displayName(user) {
     if (user) {
-      return <h2 className="typo__h1 typo__h1--username">{user.username}</h2>;
+      return (
+        <h2 className="typo__h1 typo__h1--username">
+          {user.username} <Rank />
+        </h2>
+      );
     }
     return;
   }
@@ -105,9 +109,11 @@ class ProfileComponent extends Component {
               <div className="account__tokens btn btn--secondary">
                 Tokens: {this.displayField(this.props.user, "tokens")}
               </div>
-              <a href="/prize">
-                Prize <i className="fa fa-arrow-right" />
-              </a>
+              <p>
+                <a href="/prize">
+                  Prize <i className="fa fa-arrow-right" />
+                </a>
+              </p>
             </div>
           </div>
           <div className="account__fields">
