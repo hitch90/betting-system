@@ -14,3 +14,5 @@ meteor npm install
 ```
 meteor
 ```
+
+After run you have to create new admin user. Login has to be **admin**.
