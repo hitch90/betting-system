@@ -96,9 +96,7 @@ class HomepageWrapper extends Component {
           <div className="homepage__registerBox">
             <h2 className="typo__h2">Register to Play Esbets</h2>
             <p>
-              With over 5 million players, Fantasy Premier League is the biggest
-              Fantasy Football game in the world. It’s FREE to play and you can
-              win great prizes!
+              Lorem ipsum
             </p>
             <a href="/signup" className="btn btn--primary">
               Sign up now <i className="fa fa-arrow-right" />
